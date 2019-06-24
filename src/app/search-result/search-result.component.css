@@ -1,0 +1,24 @@
+.inputSerial{
+  padding: .7em;
+  margin: .2em;
+}
+
+.accordionExample{
+  padding: .7em;
+  margin-top: .2em;
+}
+
+.btn.btn-variant-1 {
+  padding: 5px;
+  margin-left: .5em;
+  height: 40px;
+}
+
+.form-variant-1{
+  margin-left: 5em;
+height: 40px;
+}
+
+.suggestions{
+  margin-left: 5em;
+}

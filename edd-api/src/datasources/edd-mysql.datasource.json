@@ -1,0 +1,10 @@
+{
+  "name": "eddMYSQL",
+  "connector": "mysql",
+  "url": "jdbc:mysql://35.202.5.248",
+  "host": "35.202.5.248",
+  "user": "edd",
+  "password": "pass",
+  "database": "edd_sales"
+  "socketPath": "/cloudsql/miampa-1be3e:us-central1:miampa-prueba2",
+}

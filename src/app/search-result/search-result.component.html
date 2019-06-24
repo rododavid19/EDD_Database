@@ -1,0 +1,58 @@
+<div id="inputSerial" class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search by Serial" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" (click)="goToSearch()">Search</button>
+  </div>
+</div>
+
+
+<div id="inputPart" class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search by Part Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Search</button>
+  </div>
+</div>
+
+
+
+<div>
+  <input type="text" class="form-variant-1" [formControl]="typeahead" placeholder="Search By Company" (input)="suggest()" >
+  <button class="btn btn-outline-secondary btn-variant-1" type="button">Search</button>
+
+</div>
+<div class="suggestions" *ngIf="suggestions.length">
+  <p *ngFor="let s of suggestions">{{s | uppercase}}</p>
+
+</div>
+
+
+
+
+ <div onmousemove="clearSuggest()"> </div>
+
+
+<!-- for email message use MODAL in bootstrap -->
+
+<!-- $().button('toggle')	Toggles push state. Gives the button the appearance that it has been activated. $().button('dispose')	Destroys an element’s button. TODO: below change this based on action -->
+
+
+
+
+<!--
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+  </label>
+
+  <button type="button" ID="buttonHistory" class="btn btn-outline-info">Info</button>
+</div>
+
+
+-->
+
